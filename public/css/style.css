@@ -66,6 +66,8 @@ html{scroll-behavior:smooth}
         overflow-y: overlay;
         overflow-x: hidden;
         letter-spacing: 0.7px;
+        height: 100%;
+        min-height: 100%;
 
     }
     
@@ -584,20 +586,21 @@ html{scroll-behavior:smooth}
           font-size: 4.2vw;
       }
       .left-pane h1{
-          margin-top: 13px;
-          font-size: 5.9vw;
-          letter-spacing: 1.2px;
+
+          margin-top: 10px;
+          font-size: 6.4vw;
+          letter-spacing: 1.4px;
       }
       .hero-btns{
           justify-content: center;
-          font-size: 4.1vw;
+          font-size: 4.3vw;
       }
       .hero-btn{
-        padding: 2vw 5.5vw;
+        padding: 2.4vw 5.5vw;
         border-radius: 2px;
-        font-size: 3.8vw;
-        font-family: "Be Vietnam Regular";
-        padding-top: 1.5vw;
+        font-size: 4.1vw;
+        font-family: "Be Vietnam Medium";
+        padding-top: 1.9vw;
       }
 
       .nav-wrap{

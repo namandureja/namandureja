@@ -7,6 +7,6 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", require("./routes/home.js"));
 
-app.listen(process.env.PORT||3000,()=>{
-    console.log(`server is listening on port ${process.env.PORT||3000}`);
+app.listen(process.env.PORT||8080,()=>{
+    console.log(`server is listening on port ${process.env.PORT||8080}`);
 });
