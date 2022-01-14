@@ -1,0 +1,278 @@
+html{scroll-behavior:smooth}
+
+    @font-face {
+    font-family: 'Be Vietnam Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Vietnam Regular'), url('/fonts/BeVietnam-Regular.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'Be Vietnam Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Vietnam Thin'), url('/fonts/BeVietnam-Thin.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Be Vietnam Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Vietnam Light'), url('/fonts/BeVietnam-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Be Vietnam Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Vietnam Medium'), url('/fonts/BeVietnam-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Be Vietnam SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Vietnam SemiBold'), url('/fonts/BeVietnam-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Be Vietnam Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Vietnam Bold'), url('/fonts/BeVietnam-Bold.woff') format('woff');
+    }
+
+
+
+    @font-face {
+    font-family: 'Be Vietnam ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Vietnam ExtraBold'), url('/fonts/BeVietnam-ExtraBold.woff') format('woff');
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: #050505;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px rgba(255, 255, 255, 0) solid;
+        font-size: 16px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        padding: 28px 210px;
+    }
+    nav .title{
+        color: white;
+        transition: all 0.2s ease;
+
+        font-family: 'Be Vietnam Bold';
+        font-size: 1.1vw;
+        text-decoration: none;
+    }
+
+    .nav-wrap{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-wrap a{
+        text-decoration: none;
+        font-size: 1.1vw;
+        color: white;
+        position: relative;
+        margin: 0 25px;
+        display: flex;
+        transition: all 0.2s ease;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Be Vietnam Light";
+    }
+
+    nav{
+        z-index: 999;
+        transition: all 0.2s ease;
+    }
+
+    .nav-wrap a::after{
+        background-color: #FF8E95;
+        content: "";
+        bottom: -7px;
+        transition: all 0.4s ease;
+        position: absolute;
+        height: 2px;
+        width: 0%;
+     
+    }
+
+    .nav-wrap a:hover::after{
+        width: 80%;
+    }
+
+
+
+    .three-d{
+        color: white;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .sphere1{
+        background-image: url('/images/big-sphere.png');
+        height: 180px;
+        position: absolute;
+        top: 58%;
+        left: 13vw;
+        width: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .sphere2{
+        background-image: url('/images/small-sphere.png');
+        height: 200px;
+        background-repeat: no-repeat;
+        top: 22%;
+        right: 10vw;
+        position: absolute;
+        width: 200px;
+        background-size: contain;
+    }
+
+    
+    .layer{
+        width: 100%;
+        height: 100%;
+    }
+
+
+  
+
+    #contact{
+        margin-right:0 ;
+    }
+
+   
+
+    
+    #works{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #works h1{
+        font-size: 1.8vw;
+        margin-top: 0px;
+        color: white;
+        font-family: "Be Vietnam Medium";
+    }
+    form{
+        display: flex;
+        margin-top: 25px;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 36%;
+        color: white;
+    }
+    label{
+        font-family: "Be Vietnam Light";
+        padding: 10px 0;
+    }
+
+    input,textarea{
+        text-decoration: none;
+        border: 1px solid #6D6D6D;
+        background-color: #171616a6;
+        font-family: "Be Vietnam Light";
+        border-radius: 6px;
+        padding: 10px;
+        resize: none;
+        color: white;
+    }
+    
+    button{
+        background-color: #FF8E95;
+        border: none;
+        color: white;
+        font-size: 1.1vw;
+        margin-top: 30px;
+        padding: 13px 18px;
+        padding-top: 11px;
+        border-radius: 5px;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        margin-top: 7vw;
+        justify-content: center;
+        color: white;
+        padding: 30px;
+    }
+
+    footer i{
+        margin: 0 15px;
+        font-size: 1.6vw;
+    }
+
+    footer i:hover{
+        color: #428BF7;
+    }
+
+ .scrolled{
+        background-color: #050505;
+        border-color: rgba(255, 255, 255, 0.336);
+    }
+    nav .active-a{
+        color: #FF8E95;
+    }
+   nav .active-a::after{
+        width: 90%;
+    }
+
+    nav a:hover{
+        color: #FF8E95;
+    }
+
+    main{
+        margin-top: 8vw;
+    }
+
+ 
+
+    .made{
+        background-color: #171616;
+        text-align: center;
+        font-family: "Be Vietnam Light";
+        color: white;
+        padding: 15px;
+        padding-top: 13px;
+    }
+
+    input:focus,textarea:focus{
+        outline: none;
+    }

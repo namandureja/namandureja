@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="#">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link href="/css/contact.css" rel="stylesheet">
+    <title>ndureja</title>
+</head>
+<body>
+    <nav class="nav-fixed-top">
+        <a href="/" class="title">nDureja</a>
+        <div class="nav-wrap">
+            <a href="/projects">Projects</a>
+            <a href="/experience">Experience</a>
+            <a href="/resume">Resume</a>
+            <a href="#"  class="active-a" id="contact">Contact</a>
+        </div>
+    </nav>
+    
+    <div  class="three-d" data-relative-input="true">
+        <div data-depth="0.3" class="layer">
+        <div class="sphere1"></div>
+        </div>
+        <div data-depth="0.4" class="layer">
+        <div class="sphere2"></div>
+        </div>
+    </div>
+
+    <main>
+        <section id="works">
+            <h1>Let's drink some coffee</h1>   
+            <form id="contact-form" action="">
+                <label for="name">Name/Business Name</label>
+                <input type="text" required placeholder="XYZ">
+                <label for="email">Email</label>
+                <input type="email" required placeholder="example@xyz.com">
+                <label for="name">Message</label>
+                <textarea type="text" required placeholder="Hi Naman, help me build a time machine." rows="10"></textarea>
+            </form>
+            <button form="contact-form" type="submit"><i class="bi bi-send"></i> Send Message</button>
+
+         </section>
+    
+    </main>
+  
+    <footer>
+        <i class="bi bi-envelope-fill"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-behance"></i>
+        <i class="bi bi-github"></i>
+        <i class="bi bi-instagram"></i>
+    </footer>
+    <div class="made">
+        Made with <3 by Naman Dureja.
+    </div>
+    <script>
+        $('#films').hide();
+        $(function () {
+  $(document).scroll(function () {
+      console.log("lm");
+    var $nav = $(".nav-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+    var scene = document.querySelector('.three-d');
+      var parallaxInstance = new Parallax(scene);
+      parallaxInstance.invert(false, false);
+    document.getElementById("visual").addEventListener('click',(e)=>{
+        if(!e.target.classList.contains('switch-active')){
+            document.getElementById("dev").classList.remove('switch-active');
+            e.target.classList.add("switch-active");
+            $('#films').show();
+            $('#projects').hide();
+
+        }
+    })
+    document.getElementById("dev").addEventListener('click',(e)=>{
+        if(!e.target.classList.contains('switch-active')){
+            document.getElementById("visual").classList.remove('switch-active');
+            e.target.classList.add("switch-active");
+            $('#films').hide();
+            $('#projects').show();
+        }
+    })
+
+
+    </script>
+</body>
+</html>
