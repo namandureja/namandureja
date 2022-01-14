@@ -1,7 +1,7 @@
 {
-  "name": "confab-web",
+  "name": "ndureja",
   "version": "1.0.0",
-  "description": "A conversation generator",
+  "description": "Portfolio site",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

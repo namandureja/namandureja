@@ -358,9 +358,7 @@ html{scroll-behavior:smooth}
     nav .active-a{
         color: #FF8E95;
     }
-   nav .active-a::after{
-        width: 90%;
-    }
+
 
     nav a:hover{
         color: #FF8E95;

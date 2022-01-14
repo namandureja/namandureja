@@ -159,21 +159,22 @@ html{scroll-behavior:smooth}
     .left-pane h1{
         font-family: "Be Vietnam Medium";
         margin-top: 1.05vw;
+        font-size: 1.9vw;
     }
 
     .scroll-wrap{  
-        opacity: 0.85;
+        opacity: 0.78;
         position: fixed;
         z-index: 99999;
         cursor: pointer;
         bottom: 7%;
-        right: 3%;
+        right: 4%;
     }
 
     .circle-wrap{
         border-radius: 20px;
-        height: 65px;
-        width: 32px;
+        height: 45px;
+        width: 28px;
         border-style: solid;
         display: flex;
         justify-content: center;
@@ -184,18 +185,18 @@ html{scroll-behavior:smooth}
     .circle{
         border-radius: 50%;
         transform: translateY(5px);
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         animation: scroll 2s ease-in-out infinite alternate-reverse;
         background-color: white;
     }
 
 @keyframes scroll {
     from{
-        transform: translateY(5px);
+        transform: translateY(4px);
     }
     to{
-        transform: translateY(35px);
+        transform: translateY(20px);
 
     }
 }
@@ -212,6 +213,7 @@ html{scroll-behavior:smooth}
         padding-top: 0.7vw;
         transition: all 0.2s ease;
         border-radius: 2px;
+        font-size: 1.1vw;
         font-family: "Be Vietnam Regular";
         text-align: center;
         cursor: pointer;
@@ -393,13 +395,19 @@ html{scroll-behavior:smooth}
     }
 
     .project-btn{
-        margin-top: 40px;
         background-color: #428BF7;
     }
 
     .exp-btn{
-        margin-top: 40px;
         background-color: #63C7A1;
+    }
+
+    #project-a{
+        margin-top: 40px;
+    }
+
+    #work-a{
+        margin-top: 40px;
     }
     .about{
         position: absolute;
@@ -556,7 +564,7 @@ html{scroll-behavior:smooth}
       }
 
       nav .title{
-          font-size: 3vw;
+          font-size: 3.8vw;
       }
       .hero{
           margin-top: 30vw;
@@ -568,21 +576,21 @@ html{scroll-behavior:smooth}
       }
       .left-pane{
           text-align: center;
-          font-size: 3.6vw;
+          font-size: 4.2vw;
       }
       .left-pane h1{
           margin-top: 13px;
-          font-size: 5.4vw;
+          font-size: 5.7vw;
           letter-spacing: 1px;
       }
       .hero-btns{
           justify-content: center;
-          font-size: 3.6vw;
+          font-size: 4.1vw;
       }
       .hero-btn{
         padding: 2vw 5.5vw;
         border-radius: 2px;
-
+        font-family: "Be Vietnam Regular";
         padding-top: 1.5vw;
       }
 
@@ -612,7 +620,11 @@ html{scroll-behavior:smooth}
       }
 
       .projects p{
-          font-size: 3vw;
+          font-size: 4vw;
+      }
+
+      .projects h1{
+          font-size: 4.6vw;
       }
 
       .sphere1{
@@ -637,11 +649,6 @@ html{scroll-behavior:smooth}
         top: 65%;
         animation-duration: 3s;
       }
-
-      .projects h1{
-          font-size: 4.5vw;
-      }
-
       @keyframes up-down {
         from{
             top:65%;
@@ -663,30 +670,31 @@ html{scroll-behavior:smooth}
         margin-top: 30px;
     }
     .image img{
-        width: 80%;
+        width: 82%;
         border-radius: 10px;
     }
 
     .image::after{
-        width: 80%;
+        width: 82%;
         border-radius: 10px;
 
     }
 
     .about{
-        font-size: 2.7vw;
+        font-size: 3.2vw;
         left: 13%;
         bottom: 17px;
     }
 
     .link{
-        font-size: 3.3vw;
+        font-size: 3.7vw;
     }
 
     .sec-btn{
-        margin-top: 35px;
-        font-size: 3vw;
+        font-size: 3.7vw;
     }
+    
+    
 
     .job{
         margin-bottom: 80px!important;
