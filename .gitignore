@@ -2,4 +2,3 @@ node_modules
 public/css/home.css
 public/js/three.js
 views/homePage.ejs
-secret.json
