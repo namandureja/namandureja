@@ -14,6 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-I'm Naman Dureja, a full stack developer and a computer science student at NSUT Delhi. 
-I'm currently working as a software developer for [Knoblrk](https://knoblr.com/)
+I'm Naman Dureja, a full stack developer and a computer science student at NSUT Delhi.<br/>
+I'm currently working as a software developer for [Knoblrk](https://knoblr.com/)<br/>
 Reach me at [LinkedIn](https://www.linkedin.com/in/ndureja/)
