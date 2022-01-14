@@ -80,13 +80,13 @@ html{scroll-behavior:smooth}
         left: 0;
         right: 0;
         align-items: center;
-        padding: 1.4vw 15.4vw;
-        padding-top: 1.2vw;
+        padding: 1.5vw 15.4vw;
+        padding-top: 1.26vw;
     }
     nav .title{
         color: #FF8E95;
         font-family: 'Be Vietnam Bold';
-        font-size: 1.03vw;
+        font-size: 1.04vw;
         transition: all 0.2s ease;
         text-decoration: none;
     }
@@ -98,7 +98,7 @@ html{scroll-behavior:smooth}
 
     .nav-wrap a{
         text-decoration: none;
-        font-size: 1.03vw;
+        font-size: 1.04vw;
         transition: all 0.2s ease;
         color: white;
         position: relative;
@@ -168,7 +168,7 @@ html{scroll-behavior:smooth}
         position: fixed;
         z-index: 99999;
         cursor: pointer;
-        bottom: 8%;
+        bottom: 9%;
         right: 4%;
     }
 
@@ -450,6 +450,7 @@ html{scroll-behavior:smooth}
         justify-content: center;
         color: white;
         padding: 30px;
+        padding-bottom: 25px;
     }
 
     footer i{
@@ -478,7 +479,7 @@ html{scroll-behavior:smooth}
         font-family: "Be Vietnam Light";
         color: white;
         padding: 18px;
-        font-size: 1.1vw;
+        font-size: 1.09vw;
         padding-top: 13px;
     }
 
@@ -552,6 +553,9 @@ html{scroll-behavior:smooth}
     pointer-events: none;
 }
   @media (max-width: 840px) {
+      body{
+          letter-spacing: 1.2px;
+      }
       nav{
         padding: 3.5vw 7vw;
         padding-right: 6vw;
@@ -582,7 +586,7 @@ html{scroll-behavior:smooth}
       .left-pane h1{
           margin-top: 13px;
           font-size: 5.9vw;
-          letter-spacing: 1px;
+          letter-spacing: 1.2px;
       }
       .hero-btns{
           justify-content: center;

@@ -63,6 +63,10 @@ html{scroll-behavior:smooth}
     
     body{
         background-color: #050505;
+        letter-spacing: 0.7px;
+        font-family: 'Be Vietnam Regular';
+        overflow-x: hidden;
+        overflow-y: overlay;
     }
 
     nav{
@@ -76,14 +80,14 @@ html{scroll-behavior:smooth}
         left: 0;
         right: 0;
         align-items: center;
-        padding: 28px 210px;
-    }
+        padding: 1.5vw 15.4vw;
+        padding-top: 1.26vw;     }
     nav .title{
         color: white;
         transition: all 0.2s ease;
 
         font-family: 'Be Vietnam Bold';
-        font-size: 1.1vw;
+        font-size: 1.04vw;
         text-decoration: none;
     }
 
@@ -94,10 +98,10 @@ html{scroll-behavior:smooth}
 
     .nav-wrap a{
         text-decoration: none;
-        font-size: 1.1vw;
+        font-size: 1.04vw;
         color: white;
         position: relative;
-        margin: 0 25px;
+        margin: 0 1.7vw;
         display: flex;
         transition: all 0.2s ease;
         flex-direction: column;
@@ -107,14 +111,14 @@ html{scroll-behavior:smooth}
     }
 
     nav{
-        z-index: 999;
+        z-index: 9999;
         transition: all 0.2s ease;
     }
 
     .nav-wrap a::after{
         background-color: #FF8E95;
         content: "";
-        bottom: -7px;
+        bottom: -6px;
         transition: all 0.4s ease;
         position: absolute;
         height: 2px;
@@ -200,7 +204,8 @@ html{scroll-behavior:smooth}
     }
     label{
         font-family: "Be Vietnam Light";
-        padding: 10px 0;
+        padding: 13px 0;
+        font-size: 1.1vw;
     }
 
     input,textarea{
@@ -209,7 +214,9 @@ html{scroll-behavior:smooth}
         background-color: #171616a6;
         font-family: "Be Vietnam Light";
         border-radius: 6px;
-        padding: 10px;
+        padding: 12px;
+        padding-top: 10px;
+        font-size: 1vw;
         resize: none;
         color: white;
     }
@@ -221,8 +228,8 @@ html{scroll-behavior:smooth}
         font-size: 1.1vw;
         margin-top: 30px;
         padding: 13px 18px;
-        padding-top: 11px;
-        border-radius: 5px;
+        padding-top: 13px;
+        border-radius: 4px;
     }
 
     footer{
@@ -232,11 +239,12 @@ html{scroll-behavior:smooth}
         justify-content: center;
         color: white;
         padding: 30px;
+        padding-bottom: 25px;
     }
 
     footer i{
         margin: 0 15px;
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 
     footer i:hover{
@@ -264,13 +272,182 @@ html{scroll-behavior:smooth}
 
     .made{
         background-color: #171616;
+        border-top: 1px rgba(255, 255, 255, 0.25) solid;
         text-align: center;
         font-family: "Be Vietnam Light";
         color: white;
-        padding: 15px;
+        padding: 18px;
+        font-size: 1.09vw;
         padding-top: 13px;
     }
 
     input:focus,textarea:focus{
         outline: none;
     }
+
+    ::-webkit-scrollbar {
+        width: 0.5vw;
+      }
+      ::-webkit-scrollbar-track {
+        background: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.5);
+        border-radius: 8px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255,255,255,0.8);
+      }
+      .menu-icon{
+        justify-content: center;
+        align-items: center;      
+          color: #ffffff;
+          z-index: 9999;
+          font-size: 8vw;
+        display: none;  
+    }
+    
+    
+    
+    .nav-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        opacity: 1;
+        pointer-events: all;
+        flex-direction: column;
+        z-index: 9998;
+        color: white;
+        background-color: #050505;
+        height: 100%;
+      position: fixed;
+      transition: all 0.3s ease;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    .nav-mobile a{
+        text-decoration: none;
+        padding: 17px 0;
+        font-size: 5vw;
+        color: white;
+        font-family: "Be Vietnam Medium";
+    }
+    
+    .nav-mobile .nav-mobile-active{
+        color: #FF8E95;
+    }
+    
+    .nav-mobile a:hover{
+        color: #FF8E95;
+    
+    }
+    
+    .hidden{
+        display: none;
+    }
+    
+    .menu-hide{
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    @media (max-width: 840px) {
+        body{
+            letter-spacing: 1.2px;
+        }
+        nav{
+          padding: 3.5vw 7vw;
+          padding-right: 6vw;
+        }
+        nav .title{
+            color: #FF8E95;
+        }
+    
+        #works h1{
+            width: 70%;
+            text-align: center;
+            font-size: 5.2vw;
+            margin-top: 40px;
+        }
+        .menu-icon{
+            display: flex;
+            padding-top: 2px;
+        }
+        .nav-wrap{
+            display: none;
+        }
+    
+        nav .title{
+            font-size: 3.8vw;
+        }
+
+        input,textarea{
+            font-size: 3.5vw;
+        }
+    
+        main{
+            margin-top: 20vw;
+        }
+    
+    
+        .sphere1{
+            display: none;
+        }
+    
+        .sphere2{
+            display: none;
+        }
+    
+
+    
+        #works .projects h1{
+            font-size: 4.5vw;
+        }
+
+        form{
+            width: 85%;
+        }
+    
+        label{
+            font-size: 3.3vw;
+        }
+
+    
+      footer{
+          margin-top: 50px;
+      }
+      footer i{
+          font-size: 4.5vw;
+          margin: 0 13px;
+      }
+
+      button{
+          font-size: 3.3vw;
+      }
+    
+      .made{
+          font-size: 3vw;
+      }
+    
+    }
+    
+    @media (min-width:2000px) {
+        button{
+            padding: 18px 27px;
+            padding-top: 18px;
+            font-size: 1vw;
+        }
+        footer i{
+            font-size: 1.3vw;
+        }
+
+        .made{
+            padding: 20px 0px;
+            padding-bottom: 26px;
+            font-size: 1vw;
+        }
+    }
+    

@@ -63,28 +63,28 @@ html{scroll-behavior:smooth}
     
     body{
         background-color: #050505;
+        letter-spacing: 0.7px;
+        overflow-x: hidden;
+        overflow-y: overlay;
+        
     }
     
-    main{
-        padding: 0 40px;
-    }
     nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         border-bottom: 1px rgba(255, 255, 255, 0) solid;
-        font-size: 16px;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         align-items: center;
-        padding: 28px 210px;
-    }
+        padding: 1.5vw 15.4vw;
+        padding-top: 1.26vw;    }
     nav .title{
         color: white;
         font-family: 'Be Vietnam Bold';
-        font-size: 1.1vw;
+        font-size: 1.04vw;
         text-decoration: none;
         transition: all 0.2s ease;
 
@@ -97,10 +97,10 @@ html{scroll-behavior:smooth}
 
     .nav-wrap a{
         text-decoration: none;
-        font-size: 1.1vw;
+        font-size: 1.04vw;
         color: white;
         position: relative;
-        margin: 0 25px;
+        margin: 0 1.7vw;
         display: flex;
         transition: all 0.2s ease;
         flex-direction: column;
@@ -110,14 +110,14 @@ html{scroll-behavior:smooth}
     }
 
     nav{
-        z-index: 999;
+        z-index: 9999;
         transition: all 0.2s ease;
     }
 
     .nav-wrap a::after{
         background-color: #FF8E95;
         content: "";
-        bottom: -7px;
+        bottom: -6px;
         transition: all 0.4s ease;
         position: absolute;
         height: 2px;
@@ -241,6 +241,7 @@ html{scroll-behavior:smooth}
 
     .line{
         width:3px;
+        border-radius: 2px;
         height: 60px;
         background-color: #63C7A1;
     }
@@ -250,7 +251,7 @@ html{scroll-behavior:smooth}
         opacity: 1;
         width: 45%;
         margin-top: 15px;
-        font-size: 1.03vw;
+        font-size: 1.05vw;
         font-family: "Be Vietnam Light";
     }
 
@@ -296,7 +297,7 @@ html{scroll-behavior:smooth}
     .link{
         text-decoration: none;
         color: white;
-        font-size: 1.2vw;
+        font-size: 1.05vw;
         padding: 0 10px;
         font-family: "Be Vietnam Regular";
     }
@@ -340,11 +341,12 @@ html{scroll-behavior:smooth}
         justify-content: center;
         color: white;
         padding: 30px;
+        padding-bottom: 25px;
     }
 
     footer i{
         margin: 0 15px;
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 
     footer i:hover{
@@ -392,9 +394,252 @@ html{scroll-behavior:smooth}
 
     .made{
         background-color: #171616;
+        border-top: 1px rgba(255, 255, 255, 0.25) solid;
         text-align: center;
         font-family: "Be Vietnam Light";
         color: white;
-        padding: 15px;
+        padding: 18px;
+        font-size: 1.09vw;
         padding-top: 13px;
     }
+
+    
+::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.8);
+  }
+  .menu-icon{
+    justify-content: center;
+    align-items: center;      
+      color: #ffffff;
+      z-index: 9999;
+      font-size: 8vw;
+    display: none;  
+}
+
+
+
+.nav-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 1;
+    pointer-events: all;
+    flex-direction: column;
+    z-index: 9998;
+    color: white;
+    background-color: #050505;
+    height: 100%;
+  position: fixed;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-mobile a{
+    text-decoration: none;
+    padding: 17px 0;
+    font-size: 5vw;
+    color: white;
+    font-family: "Be Vietnam Medium";
+}
+
+.nav-mobile .nav-mobile-active{
+    color: #FF8E95;
+}
+
+.nav-mobile a:hover{
+    color: #FF8E95;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.menu-hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 840px) {
+    body{
+        letter-spacing: 1.2px;
+    }
+    nav{
+      padding: 3.5vw 7vw;
+      padding-right: 6vw;
+    }
+    nav .title{
+        color: #FF8E95;
+    }
+
+    #works h1{
+        width: 70%;
+        text-align: center;
+        font-size: 5.2vw;
+    }
+    .menu-icon{
+        display: flex;
+        padding-top: 2px;
+    }
+    .nav-wrap{
+        display: none;
+    }
+
+    nav .title{
+        font-size: 3.8vw;
+    }
+
+    main{
+        margin-top: 20vw;
+    }
+
+    .switch{
+        font-size: 3.6vw;
+        padding: 1.4vw 5vw;
+        padding-top: 0.6vw;
+        margin: 0 9px;
+    }
+    .project1{
+        padding-top: 35px!important;
+        padding-bottom: 7vw;
+    }
+
+    .projects{
+        padding-top: 7vw;
+    }
+
+    .projects h2{
+        font-size: 3.2vw;
+    }
+    .projects p{
+        margin-top: 10px;
+        font-size: 2.8vw;
+        width: 86%;
+    }
+
+    .sphere1{
+        display: none;
+    }
+
+    .sphere2{
+        display: none;
+    }
+
+    .toroid1{
+      background-image: url('/images/toroid-right.png');
+      left: 5vw;
+      top: 60%;
+      animation-duration: 2s;
+
+    }
+
+    .toroid2{
+      background-image: url('/images/toroid-left.png');
+      right: 5vw;
+      top: 65%;
+      animation-duration: 3s;
+    }
+
+    #works .projects h1{
+        font-size: 4.5vw;
+    }
+
+    
+
+    @keyframes up-down {
+      from{
+          top:65%;
+      }
+      to{
+          top: 70%;
+      }
+  }
+  @keyframes up-down-2 {
+      from{
+          top:65%;
+      }
+      to{
+          top: 60%;
+      }
+      
+  }
+  .image{
+      margin-top: 30px;
+  }
+  .image img{
+      width: 82%;
+      border-radius: 10px;
+  }
+
+  .image::after{
+      width: 82%;
+      border-radius: 10px;
+
+  }
+
+  .about{
+      font-size: 3.2vw;
+      left: 13%;
+      bottom: 17px;
+  }
+
+  .link{
+      font-size: 3.7vw;
+  }
+
+  .sec-btn{
+      margin-top: 35px;
+      font-size: 3vw;
+  }
+
+  .job{
+      margin-bottom: 80px!important;
+  }
+
+  footer{
+      margin-top: 50px;
+  }
+  footer i{
+      font-size: 4.5vw;
+      margin: 0 13px;
+  }
+
+  .made{
+      font-size: 3vw;
+  }
+
+}
+
+
+@media (min-width:2000px) {
+
+    footer i{
+        font-size: 1.3vw;
+    }
+
+    .made{
+        padding: 20px 0px;
+        padding-bottom: 26px;
+        font-size: 1vw;
+    }
+    .line{
+        height: 80px;
+        width: 4px;
+        border-radius: 2px;
+    }
+}
+
+

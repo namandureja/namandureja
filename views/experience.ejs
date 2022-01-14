@@ -22,7 +22,17 @@
             <a href="/resume">Resume</a>
             <a href="/contact" id="contact">Contact</a>
         </div>
+        <div class="menu-icon">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x hidden"></i>
+            </div>
     </nav>
+    <div class="nav-mobile menu-hide">
+        <a href="/projects" >Projects</a>
+        <a href="#" class="nav-mobile-active">Experience</a>
+        <a href="/resume">Resume</a>
+        <a href="/contact" id="contact">Contact</a>
+</div>
     
     <div  class="three-d" data-relative-input="true">
         <div data-depth="0.3" class="layer">
@@ -43,7 +53,7 @@
         <section id="works">
          <h1>Here's some stuff I've done over the years</h1>
 
-        <section class="projects"  style="padding-top: 3vw;">
+        <section class="projects project1"  style="padding-top: 3vw;">
             <h1>Code Warriors - President</h1>
             <h2>2019-2020</h2>
             <p>Shravan is the concept of a user interface for a smartphone which does not require sight, and instead functions on sound and haptic feedback. I built an early prototype of Shravan, and designed a website to promote it.
@@ -115,7 +125,6 @@
         $('#films').hide();
         $(function () {
   $(document).scroll(function () {
-      console.log("lm");
     var $nav = $(".nav-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
@@ -124,7 +133,11 @@
       var parallaxInstance = new Parallax(scene);
       parallaxInstance.invert(false, false);
  
-
+      document.querySelector(".menu-icon").addEventListener('click',(e)=>{
+            document.querySelector('.bi-x').classList.toggle('hidden');
+            document.querySelector('.bi-list').classList.toggle('hidden');
+            document.querySelector('.nav-mobile').classList.toggle('menu-hide');
+    })
     </script>
 </body>
 </html>

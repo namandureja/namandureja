@@ -81,12 +81,13 @@ html{scroll-behavior:smooth}
         left: 0;
         right: 0;
         align-items: center;
-        padding: 1.9vw 15.4vw;
-    }
+        padding: 1.5vw 15.4vw;
+        padding-top: 1.26vw;
+        }
     nav .title{
         color: white;
         font-family: 'Be Vietnam Bold';
-        font-size: 1.1vw;
+        font-size: 1.04vw;
         transition: all 0.2s ease;
 
         text-decoration: none;
@@ -99,7 +100,7 @@ html{scroll-behavior:smooth}
 
     .nav-wrap a{
         text-decoration: none;
-        font-size: 1.1vw;
+        font-size: 1.04vw;
         color: white;
         position: relative;
         margin: 0 1.7vw;
@@ -119,7 +120,7 @@ html{scroll-behavior:smooth}
     .nav-wrap a::after{
         background-color: #FF8E95;
         content: "";
-        bottom: -7px;
+        bottom: -6px;
         transition: all 0.4s ease;
         position: absolute;
         height: 2px;
@@ -316,11 +317,12 @@ html{scroll-behavior:smooth}
         justify-content: center;
         color: white;
         padding: 30px;
+        padding-bottom: 25px;
     }
 
     footer i{
         margin: 0 15px;
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 
     footer i:hover{
@@ -373,7 +375,7 @@ html{scroll-behavior:smooth}
         font-family: "Be Vietnam Light";
         color: white;
         padding: 18px;
-        font-size: 1.15vw;
+        font-size: 1.09vw;
         padding-top: 13px;
     }
 
@@ -448,6 +450,9 @@ html{scroll-behavior:smooth}
 }
 
 @media (max-width: 840px) {
+    body{
+        letter-spacing: 1.2px;
+    }
     nav{
       padding: 3.5vw 7vw;
       padding-right: 6vw;
@@ -459,6 +464,10 @@ html{scroll-behavior:smooth}
     .nav-wrap{
         display: none;
     }
+    nav .title{
+        color: #FF8E95;
+    }
+
 
     nav .title{
         font-size: 3.8vw;
@@ -484,8 +493,8 @@ html{scroll-behavior:smooth}
 
     .projects p{
         margin-top: 10px;
-        font-size: 2.6vw;
-        width: 80%;
+        font-size: 2.8vw;
+        width: 86%;
     }
 
     .sphere1{
@@ -512,7 +521,7 @@ html{scroll-behavior:smooth}
     }
 
     .projects h1{
-        font-size: 4.3vw;
+        font-size: 4.5vw;
     }
 
     @keyframes up-down {
@@ -536,24 +545,24 @@ html{scroll-behavior:smooth}
       margin-top: 30px;
   }
   .image img{
-      width: 80%;
+      width: 82%;
       border-radius: 10px;
   }
 
   .image::after{
-      width: 80%;
+      width: 82%;
       border-radius: 10px;
 
   }
 
   .about{
-      font-size: 2.7vw;
+      font-size: 3.2vw;
       left: 13%;
       bottom: 17px;
   }
 
   .link{
-      font-size: 3.3vw;
+      font-size: 3.7vw;
   }
 
   .sec-btn{
@@ -579,3 +588,37 @@ html{scroll-behavior:smooth}
 
 }
 
+@media (min-width:2000px) {
+
+    footer i{
+        font-size: 1.3vw;
+    }
+
+    .made{
+        padding: 20px 0px;
+        padding-bottom: 26px;
+        font-size: 1vw;
+    }
+    .image img{
+        width: 56%;
+    }
+
+    .image::after{
+        width: 56%;
+    }
+    
+
+    .work-links{
+        margin-top: 30px;
+    }
+
+    .about{
+        font-size: 1vw;
+        left:23.5%;
+        bottom: 31px;
+    }
+    .switch{
+
+        border-radius: 30px;
+    }
+}

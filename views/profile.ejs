@@ -34,13 +34,13 @@
             <a href="/resume">Resume</a>
             <a href="/contact" id="contact">Contact</a>
     </div>
-    <div class="scroll-wrap" >
+    <!-- <div class="scroll-wrap" >
         <a href="#projects">
             <div class="circle-wrap">
                 <div class="circle"></div>
             </div>
         </a>
-    </div>
+    </div> -->
     <div  class="three-d"  data-relative-input="true">
         <div data-depth="0.3" class="layer">
         <div class="sphere1"></div>
@@ -120,7 +120,6 @@
     <script>
         $(function () {
   $(document).scroll(function () {
-      console.log("lm");
     var $nav = $(".nav-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });

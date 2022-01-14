@@ -9,6 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link href="/css/contact.css" rel="stylesheet">
     <title>ndureja</title>
@@ -22,7 +25,17 @@
             <a href="/resume">Resume</a>
             <a href="#"  class="active-a" id="contact">Contact</a>
         </div>
+        <div class="menu-icon">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x hidden"></i>
+            </div>
     </nav>
+    <div class="nav-mobile menu-hide">
+        <a href="/projects" >Projects</a>
+        <a href="/experience" >Experience</a>
+        <a href="/resume">Resume</a>
+        <a href="#" class="nav-mobile-active" id="contact">Contact</a>
+</div>
     
     <div  class="three-d" data-relative-input="true">
         <div data-depth="0.3" class="layer">
@@ -36,15 +49,15 @@
     <main>
         <section id="works">
             <h1>Let's drink some coffee</h1>   
-            <form id="contact-form" action="">
+            <form id="contact-form" action="" onsubmit="event.preventDefault();  send(event)">
                 <label for="name">Name/Business Name</label>
-                <input type="text" required placeholder="XYZ">
+                <input type="text" id="name" required placeholder="XYZ">
                 <label for="email">Email</label>
-                <input type="email" required placeholder="example@xyz.com">
+                <input type="email" id="email" required placeholder="example@xyz.com">
                 <label for="name">Message</label>
-                <textarea type="text" required placeholder="Hi Naman, help me build a time machine." rows="10"></textarea>
+                <textarea type="text" id="message" required placeholder="Hi Naman, help me build a time machine." rows="10"></textarea>
             </form>
-            <button form="contact-form" type="submit"><i class="bi bi-send"></i> Send Message</button>
+            <button form="contact-form" type="submit" ><i class="bi bi-send"></i> Send Message</button>
 
          </section>
     
@@ -65,7 +78,6 @@
         $('#films').hide();
         $(function () {
   $(document).scroll(function () {
-      console.log("lm");
     var $nav = $(".nav-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
@@ -73,25 +85,36 @@
     var scene = document.querySelector('.three-d');
       var parallaxInstance = new Parallax(scene);
       parallaxInstance.invert(false, false);
-    document.getElementById("visual").addEventListener('click',(e)=>{
-        if(!e.target.classList.contains('switch-active')){
-            document.getElementById("dev").classList.remove('switch-active');
-            e.target.classList.add("switch-active");
-            $('#films').show();
-            $('#projects').hide();
+   
 
-        }
+    document.querySelector(".menu-icon").addEventListener('click',(e)=>{
+            document.querySelector('.bi-x').classList.toggle('hidden');
+            document.querySelector('.bi-list').classList.toggle('hidden');
+            document.querySelector('.nav-mobile').classList.toggle('menu-hide');
     })
-    document.getElementById("dev").addEventListener('click',(e)=>{
-        if(!e.target.classList.contains('switch-active')){
-            document.getElementById("visual").classList.remove('switch-active');
-            e.target.classList.add("switch-active");
-            $('#films').hide();
-            $('#projects').show();
-        }
-    })
+    var notyf = new Notyf();
 
 
+    function send(e){
+
+            $.ajax({
+                type: "POST",
+                url: '/submit',
+                data: 
+                {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                },
+                success: (success)=>{
+                    notyf.success("Submitted!")
+                    document.getElementById('name').value="";
+                    document.getElementById('email').value="" ;
+                document.getElementById('message').value="";
+                }        
+                
+            });
+    }
     </script>
 </body>
 </html>
