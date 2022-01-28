@@ -83,7 +83,7 @@ html{scroll-behavior:smooth}
         right: 0;
         align-items: center;
         padding: 1.5vw 15.4vw;
-        padding-top: 1.26vw;
+        padding-top: 1.9vw;
     }
     nav .title{
         color: #FF8E95;
@@ -127,9 +127,9 @@ html{scroll-behavior:smooth}
         width: 0%;
     }
 
-    .nav-wrap a:hover::after{
+    /* .nav-wrap a:hover::after{
         width: 90%;
-    }
+    } */
 
     #contact{
         margin-right: 0;
@@ -138,7 +138,7 @@ html{scroll-behavior:smooth}
     .right{
         width: 23vw;
         height: 23vw;
-        background-image: url('/images/ndureja.png');
+        /* background-image: url('/images/ndureja.webp'); */
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 7px;
@@ -153,6 +153,8 @@ html{scroll-behavior:smooth}
         align-items: center;
 
     }
+
+
 
     .left-pane{
         font-family: "Be Vietnam Light";
@@ -249,7 +251,7 @@ html{scroll-behavior:smooth}
         left: 0;
         right: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         z-index: -1;
     }
 
@@ -355,21 +357,21 @@ html{scroll-behavior:smooth}
         justify-content: center;
         align-items: center;
         margin-top: 40px;
+        width: 52%;
         position: relative;
     }
 
     .image img{
         border-radius: 13px;
-        width: 50%;
+        width: 100%;
     }
 
     .image::after{
         content: "";
         position: absolute;
         bottom: 0;
-        width: 50%;
+        width: 100%;
         border-radius: 13px;
-
         height: 100%;
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 132.94%);
@@ -414,9 +416,9 @@ html{scroll-behavior:smooth}
     }
     .about{
         position: absolute;
-        bottom: 24px;
+        bottom: 28px;
         font-size: 1.13vw;
-        left: 27%;
+        left: 3.5%;
         font-family: "Be Vietnam Light";
         color: white;
         z-index: 100;
@@ -455,8 +457,17 @@ html{scroll-behavior:smooth}
         padding-bottom: 25px;
     }
 
-    footer i{
-        margin: 0 15px;
+    .about{
+        transition: all 0.4s ease;
+        transform: translateY(0);
+    }
+
+     .image:hover  .about{
+        transform: translateY(-6px);
+    }
+
+    footer a{
+        margin: 0 11px;
         font-size: 1.4vw;
     }
 
@@ -466,29 +477,33 @@ html{scroll-behavior:smooth}
 
  .scrolled{
         background-color: #050505;
+        padding-top: 1.26vw;
+        padding-bottom: 1.5vw;
         border-color: rgba(255, 255, 255, 0.336);
     }
 
     nav a:hover{
         color: #FF8E95;
+        opacity: 0.78;
     }
 
 
     .made{
-        background-color: #171616;
+        background-color: transparent;
         border-top: 1px rgba(255, 255, 255, 0.25) solid;
         text-align: center;
         font-family: "Be Vietnam Light";
         color: white;
         padding: 18px;
-        font-size: 1.09vw;
+        font-size: 0.9vw;
         padding-top: 13px;
     }
-
     
 ::-webkit-scrollbar {
     width: 0.5vw;
   }
+
+  
   ::-webkit-scrollbar-track {
     background: none;
   }
@@ -554,12 +569,211 @@ html{scroll-behavior:smooth}
     opacity: 0;
     pointer-events: none;
 }
-  @media (max-width: 840px) {
+
+@media (max-width:1080px) {
+    nav .title{
+        font-size: 0.85rem;
+    }
+
+    .nav-wrap a{
+        font-size: 0.85rem;
+    }
+
+    .about{
+        bottom: 17px;
+    }
+}
+@media (max-width:1000px) {
+    nav .title{
+        font-size: 0.81rem;
+    }
+
+    .nav-wrap a{
+        font-size: 0.81rem;
+    }
+}
+@media (max-width: 940px) {
+    body{
+        letter-spacing: 1.2px;
+    }
+    nav{
+      padding: 1.7vw 7vw!important;
+      padding-right: 6vw;
+    }
+    .nav-mobile a{
+        font-size: 3vw;
+    }
+    .menu-icon{
+        display: flex;
+        padding-top: 5px;
+
+    }
+
+    .menu-icon i{
+        font-size: 6vw;
+    }
+    .nav-wrap{
+        display: none;
+    }
+    
+
+    nav .title{
+        font-size: 2.6vw;
+        padding-bottom: 5px;
+    }
+    .hero{
+        margin-top: 20vw;
+        height: auto;
+        padding: 1.2vw 7vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .left-pane{
+        text-align: center;
+        font-size: 2.4vw;
+    }
+    .left-pane h1{
+
+        margin-top: 13px;
+        font-size: 4.4vw;
+        letter-spacing: 1.4px;
+    }
+    .hero-btns{
+        justify-content: center;
+        font-size: 4.3vw;
+        margin-top: 30px;
+    }
+    .hero-btn{
+      padding: 1.7vw 4.2vw;
+      border-radius: 2px;
+      font-size: 2.45vw;
+      font-family: "Be Vietnam Medium";
+      padding-top: 1.4vw;
+    }
+
+    .nav-wrap{
+        flex-direction: column;
+    }
+
+ 
+    #contact-btn{
+        margin-left: 14px;
+      padding-left: 4vw;
+      padding-right: 4vw;
+    }
+
+    .scroll-wrap{
+        display: none;
+    }
+
+    .right{
+        margin-top: 70px;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .projects{
+        padding-top: 15vw;
+    }
+
+    .projects p{
+        font-size: 2vw;
+    }
+
+    .projects h1{
+        font-size: 2.6vw;
+    }
+
+    .sphere1{
+        display: none;
+    }
+
+    .sphere2{
+        display: none;
+    }
+
+    .toroid1{
+      background-image: url('/images/toroid-right.png');
+      left: 5vw;
+      top: 60%;
+      animation-duration: 2s;
+
+    }
+
+    .toroid2{
+      background-image: url('/images/toroid-left.png');
+      right: 5vw;
+      top: 65%;
+      animation-duration: 3s;
+    }
+    @keyframes up-down {
+      from{
+          top:65%;
+      }
+      to{
+          top: 70%;
+      }
+  }
+  @keyframes up-down-2 {
+      from{
+          top:65%;
+      }
+      to{
+          top: 60%;
+      }
+      
+  }
+  .image{
+      margin-top: 30px;
+      width: 72%;
+  }
+  .image img{
+      border-radius: 10px;
+  }
+
+  .image::after{
+      border-radius: 10px;
+
+  }
+
+  .about{
+      font-size: 2.1vw;
+      left: 3.5%;
+      bottom: 20px;
+  }
+
+  .link{
+      font-size: 2.1vw;
+  }
+
+  .sec-btn{
+      font-size: 2.1vw;
+  }
+  
+  
+
+  .job{
+      margin-bottom: 80px!important;
+  }
+
+  footer i{
+      font-size: 2.9vw;
+  }
+
+  .made{
+      font-size: 1.6vw;
+  }
+
+}
+
+
+  @media (max-width: 480px) {
       body{
           letter-spacing: 1.2px;
       }
       nav{
-        padding: 3.5vw 7vw;
+        padding: 3.5vw 7vw!important;
         padding-right: 6vw;
       }
       .menu-icon{
@@ -570,9 +784,14 @@ html{scroll-behavior:smooth}
           display: none;
       }
 
+      .nav-mobile a{
+            font-size: 4.8vw;
+      }
       nav .title{
           font-size: 3.8vw;
       }
+
+     
       .hero{
           margin-top: 30vw;
           height: auto;
@@ -588,7 +807,7 @@ html{scroll-behavior:smooth}
       .left-pane h1{
 
           margin-top: 10px;
-          font-size: 6.4vw;
+          font-size: 5.7vw;
           letter-spacing: 1.4px;
       }
       .hero-btns{
@@ -598,7 +817,7 @@ html{scroll-behavior:smooth}
       .hero-btn{
         padding: 2.4vw 5.5vw;
         border-radius: 2px;
-        font-size: 4.1vw;
+        font-size: 3.45vw;
         font-family: "Be Vietnam Medium";
         padding-top: 1.9vw;
       }
@@ -677,21 +896,20 @@ html{scroll-behavior:smooth}
     }
     .image{
         margin-top: 30px;
+        width: 82%;
     }
     .image img{
-        width: 82%;
         border-radius: 10px;
     }
 
     .image::after{
-        width: 82%;
         border-radius: 10px;
 
     }
 
     .about{
         font-size: 3.2vw;
-        left: 13%;
+        left: 3.5%;
         bottom: 17px;
     }
 
@@ -711,11 +929,39 @@ html{scroll-behavior:smooth}
 
     footer i{
         font-size: 4.5vw;
-        margin: 0 13px;
     }
 
     .made{
-        font-size: 3vw;
+        font-size: 2.8vw;
     }
 
   }
+
+  @media (min-width:2000px) {
+
+    .image {
+        width: 56%;
+    }
+  
+    footer i{
+        font-size: 1.1vw;
+    }
+
+    .about{
+        font-size: 1vw;
+        left:2.5%;
+        bottom: 31px;
+    }
+
+    .made{
+        padding: 20px 0px;
+        padding-bottom: 26px;
+        font-size: 0.7vw;
+    }
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+

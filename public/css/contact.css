@@ -64,10 +64,10 @@ html{scroll-behavior:smooth}
     body{
         background-color: #050505;
         letter-spacing: 0.7px;
-        font-family: 'Be Vietnam Regular';
+        /* font-family: 'Be Vietnam Regular'; */
         overflow-x: hidden;
         height: 100%;
-        min-height: 100%;
+        min-height: 100vh;
         overflow-y: overlay;
     }
 
@@ -83,7 +83,7 @@ html{scroll-behavior:smooth}
         right: 0;
         align-items: center;
         padding: 1.5vw 15.4vw;
-        padding-top: 1.26vw;     }
+        padding-top: 1.9vw;     }
     nav .title{
         color: white;
         transition: all 0.2s ease;
@@ -128,9 +128,9 @@ html{scroll-behavior:smooth}
      
     }
 
-    .nav-wrap a:hover::after{
+    /* .nav-wrap a:hover::after{
         width: 80%;
-    }
+    } */
 
 
 
@@ -141,7 +141,7 @@ html{scroll-behavior:smooth}
         left: 0;
         right: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         z-index: -1;
     }
 
@@ -228,9 +228,15 @@ html{scroll-behavior:smooth}
         border: none;
         color: white;
         font-size: 1.1vw;
-        padding: 13px 18px;
-        padding-top: 13px;
-        border-radius: 4px;
+        padding: 0.9vw 1.3vw;
+        pointer-events: none;
+        opacity: 0.75;
+        cursor: pointer;
+        border-radius: 2.5px;
+    }
+
+    button:hover{
+        background-color: #CB7378;
     }
 
     .wrap{
@@ -241,15 +247,24 @@ html{scroll-behavior:smooth}
     footer{
         display: flex;
         align-items: center;
-        margin-top: 7vw;
         justify-content: center;
         color: white;
         padding: 30px;
         padding-bottom: 25px;
+        margin-top: 5vw;
+        padding-top: 15px;
     }
 
-    footer i{
-        margin: 0 15px;
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: white !important;
+        font-family: "Be Vietnam Light" !important;
+    }
+    footer a{
+        margin: 0 11px;
         font-size: 1.4vw;
     }
 
@@ -257,10 +272,13 @@ html{scroll-behavior:smooth}
         color: #428BF7;
     }
 
- .scrolled{
+    .scrolled{
         background-color: #050505;
+        padding-top: 1.26vw;
+        padding-bottom: 1.5vw;
         border-color: rgba(255, 255, 255, 0.336);
     }
+
     nav .active-a{
         color: #FF8E95;
     }
@@ -268,6 +286,8 @@ html{scroll-behavior:smooth}
 
     nav a:hover{
         color: #FF8E95;
+        opacity: 0.78;
+
     }
 
     main{
@@ -277,13 +297,13 @@ html{scroll-behavior:smooth}
  
 
     .made{
-        background-color: #171616;
+        background-color: transparent;
         border-top: 1px rgba(255, 255, 255, 0.25) solid;
         text-align: center;
         font-family: "Be Vietnam Light";
         color: white;
         padding: 18px;
-        font-size: 1.09vw;
+        font-size: 0.9vw;
         padding-top: 13px;
     }
 
@@ -350,6 +370,15 @@ html{scroll-behavior:smooth}
         color: #FF8E95;
     
     }
+
+    .ishn{
+        font-family: "Be Vietnam Light";
+        color: white;
+        text-align: center;
+        margin-top: 7vw;
+
+        font-size: 0.8vw;
+    }
     
     .hidden{
         display: none;
@@ -360,12 +389,136 @@ html{scroll-behavior:smooth}
         pointer-events: none;
     }
     
+
+    @media (max-width:1080px) {
+
+        nav .title{
+            font-size: 0.85rem;
+        }
+    
+        .nav-wrap a{
+            font-size: 0.85rem;
+        }
+      
+    }
+    @media (max-width:1000px) {
+        nav .title{
+            font-size: 0.81rem;
+        }
+    
+        .nav-wrap a{
+            font-size: 0.81rem;
+        }
+
+        main{
+            margin-top: 10vw;
+        };
+    }
     @media (max-width: 840px) {
         body{
             letter-spacing: 1.2px;
         }
         nav{
-          padding: 3.5vw 7vw;
+            padding: 1.7vw 7vw!important;
+            padding-right: 6vw;
+          }
+          .nav-mobile a{
+            font-size: 3vw;
+        }
+        nav .title{
+            color: #FF8E95;
+        }
+    
+        #works h1{
+            width: 70%;
+            text-align: center;
+            font-size: 3.8vw;
+            margin-top: 20px;
+        }
+        .menu-icon{
+            display: flex;
+            padding-top: 5px;
+    
+        }
+    
+        .menu-icon i{
+            font-size: 6vw;
+        }
+        .nav-wrap{
+            display: none;
+        }
+    
+        nav .title{
+            font-size: 2.6vw;
+            padding-bottom: 5px;
+    
+        }
+
+        input,textarea{
+            font-size: 2.2vw;
+        }
+    
+        main{
+            margin-top: 18vw;
+        }
+    
+    
+        .sphere1{
+            top: 60%;
+            left: 10%;
+        }
+
+    
+        .sphere2{
+            top: 20%;
+            width: 120px;
+            height: 120px;
+            right: -10%;
+        }
+    
+
+    
+        #works .projects h1{
+            font-size: 4.5vw;
+        }
+
+        form{
+            width: 85%;
+        }
+    
+        label{
+            font-size: 2.3vw;
+        }
+
+    
+      .ishn{
+          margin-top: 50px;
+          font-size: 3vw;
+      }
+      footer{
+          margin-top: 70px;
+      }
+      footer i{
+          font-size: 3vw;
+          }
+
+      button{
+          font-size: 2.3vw;
+          padding: 1.9vw 2.3vw;
+      }
+    
+      .made{
+          font-size: 2vw;
+      }
+    
+    }
+
+    @media (max-width: 480px) {
+        body{
+            letter-spacing: 1.2px;
+        }
+        nav{
+          padding: 3.5vw 7vw!important;
           padding-right: 6vw;
         }
         nav .title{
@@ -400,11 +553,16 @@ html{scroll-behavior:smooth}
     
     
         .sphere1{
-            display: none;
+            top: 60%;
+            left: 10%;
         }
+
     
         .sphere2{
-            display: none;
+            top: 20%;
+            width: 120px;
+            height: 120px;
+            right: -10%;
         }
     
 
@@ -422,20 +580,24 @@ html{scroll-behavior:smooth}
         }
 
     
-      footer{
+      .ishn{
           margin-top: 50px;
+          font-size: 3vw;
       }
       footer i{
           font-size: 4.5vw;
-          margin: 0 13px;
-      }
+          }
 
       button{
           font-size: 3.3vw;
+          padding: 2.6vw 2.8vw;
       }
+      .nav-mobile a{
+        font-size: 4.8vw;
+  }
     
       .made{
-          font-size: 3vw;
+          font-size: 2.8vw;
       }
     
     }
@@ -453,7 +615,7 @@ html{scroll-behavior:smooth}
         .made{
             padding: 20px 0px;
             padding-bottom: 26px;
-            font-size: 1vw;
+            font-size: 0.7vw;
         }
     }
     .wrap{
@@ -469,7 +631,7 @@ html{scroll-behavior:smooth}
       height: 10em;
       right: -36px;
     }
-    .bi{
+    button .bi{
         margin-right: 7px;
     }
     .loader {
@@ -504,4 +666,10 @@ html{scroll-behavior:smooth}
         transform: rotate(360deg);
       }
     }
+    
+    footer a{
+        color: white;
+        text-decoration: none;
+    }
+
     

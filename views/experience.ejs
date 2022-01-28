@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/n.png">
+    <link rel="preload" href="/fonts/BeVietnam-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Thin.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-SemiBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="#">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -15,11 +24,12 @@
 </head>
 <body>
     <nav class="nav-fixed-top">
-        <a href="/" class="title">nDureja</a>
+        <a href="/" class="title" style="color: #FF8E95;">nDureja</a>
         <div class="nav-wrap">
+            <a href="/">Home</a>
             <a href="/projects">Projects</a>
             <a href="#" class="active-a">Experience</a>
-            <a href="/resume">Resume</a>
+            <!-- <a href="/resume">Resume</a> -->
             <a href="/contact" id="contact">Contact</a>
         </div>
         <div class="menu-icon">
@@ -28,9 +38,10 @@
             </div>
     </nav>
     <div class="nav-mobile menu-hide">
+        <a href="/">Home</a>
         <a href="/projects" >Projects</a>
         <a href="#" class="nav-mobile-active">Experience</a>
-        <a href="/resume">Resume</a>
+        <!-- <a href="/resume">Resume</a> -->
         <a href="/contact" id="contact">Contact</a>
 </div>
     
@@ -50,19 +61,58 @@
     </div>
 
     <main>
-        <section id="works">
+        <section id="works" data-aos="fade-up"  data-aos-once="true">
          <h1>Here's some stuff I've done over the years</h1>
-
-        <section class="projects project1"  style="padding-top: 3vw;">
-            <h1>Code Warriors - President</h1>
-            <h2>2019-2020</h2>
-            <p>Shravan is the concept of a user interface for a smartphone which does not require sight, and instead functions on sound and haptic feedback. I built an early prototype of Shravan, and designed a website to promote it.
-            <div class="work-links">
-                <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-                <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+          <section class="projects project1"  style="padding-top: 3vw;" >
+            <h1>Software Developer - Knoblr</h1>
+            <h2>2021-Present</h2>
+            <p>
+                Currently employed at Knoblr, a communication and collaboration platform, based in the United States. Developing the web and mobile application for the firm and also integrating third party APIs like Loom, Clever and Zoom.  
+            </p>
+              <div class="work-links">
+                <a href="https://Knoblr.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
             </div>
         </section>
         <div class="line"></div>
+        <section class="projects " >
+            <h1>IT Head- Lorene Solutions Pvt. Ltd. </h1>
+            <h2>2021-Present</h2>
+            <p>
+                Managing all the tech logistics for the firm which includes developing cross-platform applications, designing user interfaces and managing day-to-day tech operations.
+            </p>
+            
+        </section>
+        <div class="line"></div>
+        <section class="projects " >
+            <h1>Freelance Developer</h1>
+            <h2>2019-Present</h2>
+            <p>
+                Working as a part-time freelancer. Developed applications in various domains such as e-commerce, payment solutions, business applications, management softwares and company websites. Worked with a multitude of clients all over the country and globally as well.
+            </p>
+        </section>
+        <div class="line"></div>
+        <section class="projects " >
+            <h1>Design Intern - Leza Studios</h1>
+            <h2>2019</h2>
+            <p>
+                Did an internship at Leza Studios, a textile manufacturer. Designed a fresh clothing for the firm and a notebook collection as well.
+            </p>
+            
+        </section>
+        <div class="line" ></div>
+        <section class="projects " >
+            <h1>President - Code Warriors</h1>
+            <h2>2018-2020</h2>
+            <p>
+                Led my school's computer club, Code Warriors for 2 years. Organised annual inter-school tech symposiums hosted by the club.
+                Also won numerous national and inter-school hackathons, designing and film making events for the club as well.
+            </p>
+            <div class="work-links">
+                <a href="https://code-warriors.org" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+                <!-- <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a> -->
+            </div>
+        </section>
+        <!-- <div class="line"></div>
         <section class="projects" >
             <h1>Code Warriors - President</h1>
             <h2>2019-2020</h2>
@@ -104,26 +154,28 @@
                 <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
                 <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
             </div>
-        </section>
+        </section> -->
         
              </section>
     
     </main>
   
     <footer>
-        <i class="bi bi-envelope-fill"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-behance"></i>
-        <i class="bi bi-github"></i>
-        <i class="bi bi-instagram"></i>
-    </footer>
+        <a href="mailto: hello@ndureja.com"><i class="bi bi-envelope-fill"></i></a> 
+         <a href="https://twitter.com/dureja_naman" target="_blank"><i class="bi bi-twitter"></i></a>
+         <a href="https://www.linkedin.com/in/ndureja/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.behance.net/namandureja" target="_blank"> <i class="bi bi-behance"></i></a>
+         <a href="https://github.com/namandureja" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/namandurejaa/" target="_blank"> <i class="bi bi-instagram"></i></a>
+     </footer>
     <div class="made">
         Made with <3 by Naman Dureja.
     </div>
     <script>
         $('#films').hide();
         $(function () {
+            AOS.init();
+
   $(document).scroll(function () {
     var $nav = $(".nav-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());

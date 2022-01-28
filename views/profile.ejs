@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://ndureja.com/" />
+    <meta property="og:title" content="Naman Dureja" />
+    <meta property="og:image" content="https://ndureja.com/images/meta.png" />
+    <meta property="og:description" content="Portfolio" />
+    <link rel="icon" href="/images/n.png">
+    <link rel="preload" href="/fonts/BeVietnam-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Thin.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-SemiBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="#">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link href="/css/style.css" rel="stylesheet">
+
     <title>ndureja</title>
 </head>
 <body>
     <nav class="nav-fixed-top">
         <a href="#" class="title">nDureja</a>
         <div class="nav-wrap">
+            <a href="#" style="color: #FF8E95;">Home</a>
             <a href="/projects">Projects</a>
             <a href="/experience">Experience</a>
-            <a href="/resume">Resume</a>
+            <!-- <a href="/resume">Resume</a> -->
             <a href="/contact" id="contact">Contact</a>
         </div>
         <div class="menu-icon">
@@ -29,9 +44,10 @@
     </nav>
 
     <div class="nav-mobile menu-hide">
+        <a href="#" style="color: #FF8E95;">Home</a>
             <a href="/projects" >Projects</a>
             <a href="/experience">Experience</a>
-            <a href="/resume">Resume</a>
+            <!-- <a href="/resume">Resume</a> -->
             <a href="/contact" id="contact">Contact</a>
     </div>
     <!-- <div class="scroll-wrap" >
@@ -42,7 +58,7 @@
         </a>
     </div> -->
     <div  class="three-d"  data-relative-input="true">
-        <div data-depth="0.3" class="layer">
+        <div data-depth="0.6" class="layer">
         <div class="sphere1"></div>
         </div>
         <div data-depth="0.4" class="layer">
@@ -56,8 +72,8 @@
                 </div>
     </div>
 
-    <section class="hero">
-        <div class="left-pane">
+    <section class="hero" >
+        <div class="left-pane" data-aos="fade"  data-aos-once="true"> 
             <p>Hello, I'm <span style="color:#FF8E95;">Naman Dureja</span></p>
             <h1>Fullstack Developer +<br> Filmmaker + Computer<br>Science Student  </h1>
             <div class="hero-btns">
@@ -69,19 +85,19 @@
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" data-aos="fade-up"  data-aos-once="true">
         <p>a project I recently did..</p>
-        <h1>Confab: App for better socializing</h1>
+        <h1>Ojingeo: Squid game Management Application</h1>
 
         <div class="image">
-            <img src="/images/placeholder.png" alt="">
+            <img src="/images/oj.png" id="imgDiv" alt=""/>
             <div class="about">
-                App Development, Flutter, Firebase
+                Node.js, ExpressJS, Web Dev
             </div>
         </div>
         <div class="work-links">
-            <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-            <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+            <a href="https://ojingeo.ndureja.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+            <a href="https://github.com/namandureja/ojingeo" target="_blank" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
         </div>
         <a href="/projects" id="project-a" style="text-decoration: none; color: white;">
             <div class="project-btn sec-btn hero-btn">
@@ -90,14 +106,18 @@
         </a>
     </section>
 
-    <section class="projects job" style="margin-bottom: 140px;">
+    <section class="projects job" style="margin-bottom: 140px;" data-aos="fade-up"  data-aos-once="true">
         <p>I'm currently employed at..</p>
         <h1>Knoblr: A Communication and Collaboration Platform</h1>
         <p style="margin-top: 10px;">as a Software Developer</p>
 
+        <div class="image">
+            <img src="/images/knob.png" alt="">
+            
+        </div>
 
         <div class="work-links">
-            <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+            <a href="https://knoblr.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
         </div>
         <a href="/experience" id="work-a" style="text-decoration: none; color: white;">
 
@@ -107,26 +127,35 @@
         </a>
     </section>
     <footer>
-        <i class="bi bi-envelope-fill"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-behance"></i>
-        <i class="bi bi-github"></i>
-        <i class="bi bi-instagram"></i>
+        <a href="mailto: hello@ndureja.com"><i class="bi bi-envelope-fill"></i></a> 
+        <a href="https://twitter.com/dureja_naman" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ndureja/" target="_blank"><i class="bi bi-linkedin"></i></a>
+       <a href="https://www.behance.net/namandureja" target="_blank"> <i class="bi bi-behance"></i></a>
+        <a href="https://github.com/namandureja" target="_blank"><i class="bi bi-github"></i></a>
+       <a href="https://www.instagram.com/namandurejaa/" target="_blank"> <i class="bi bi-instagram"></i></a>
     </footer>
     <div class="made">
         Made with <3 by Naman Dureja.
     </div>
     <script>
-        $(function () {
+        $(function () {  
+            AOS.init();
   $(document).scroll(function () {
     var $nav = $(".nav-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
     var scene = document.querySelector('.three-d');
-      var parallaxInstance = new Parallax(scene);
-      parallaxInstance.invert(false, false);
+    var gyroPresent = false;
+    window.addEventListener("devicemotion", function(event){
+    if(event.rotationRate.alpha || event.rotationRate.beta || event.rotationRate.gamma)
+        gyroPresent = true;
+    });
+    if(!gyroPresent){
+        var parallaxInstance = new Parallax(scene);
+        parallaxInstance.invert(false, false);
+    }
+     
     function scroll(){
             window.location.href="#projects";
         }
@@ -134,6 +163,21 @@
             document.querySelector('.bi-x').classList.toggle('hidden');
             document.querySelector('.bi-list').classList.toggle('hidden');
             document.querySelector('.nav-mobile').classList.toggle('menu-hide');
+    })
+
+    $(function(){
+        var bgimage = new Image();      
+        bgimage.src="/images/ndureja.webp";       
+        $(".right").hide();     
+        $(bgimage).on('load',function(){
+            $(".right").css("background-image","url("+$(this).attr("src")+")").fadeIn(320); 
+        }); 
+    });
+    document.getElementById('work-btn').addEventListener('click',()=>{
+        window.location.href='#projects';
+    })
+    document.getElementById('contact-btn').addEventListener('click',()=>{
+        window.location.href='/contact';
     })
     </script>
 </body>

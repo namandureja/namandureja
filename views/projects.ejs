@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/n.png">
+    <link rel="preload" href="/fonts/BeVietnam-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Thin.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-SemiBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/BeVietnam-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="#">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -16,11 +25,12 @@
 </head>
 <body>
     <nav class="nav-fixed-top">
-        <a href="/" class="title" >nDureja</a>
+        <a href="/" class="title" style="color: #FF8E95;" >nDureja</a>
         <div class="nav-wrap">
+            <a href="/">Home</a>
             <a href="#" class="active-a" style="color: #FF8E95;">Projects</a>
             <a href="/experience">Experience</a>
-            <a href="/resume">Resume</a>
+            <!-- <a href="/resume">Resume</a> -->
             <a href="/contact" id="contact">Contact</a>
         </div>
         <div class="menu-icon">
@@ -29,9 +39,10 @@
             </div>
     </nav>
     <div class="nav-mobile menu-hide">
+        <a href="/">Home</a>
         <a href="#" class="nav-mobile-active">Projects</a>
         <a href="/experience">Experience</a>
-        <a href="/resume">Resume</a>
+        <!-- <a href="/resume">Resume</a> -->
         <a href="/contact" id="contact">Contact</a>
 </div>
     <div  class="three-d">
@@ -50,119 +61,225 @@
     </div>
 
     <main>
-        <div class="switch-wrap">
-            <div class="switch switch-active" id="dev">Dev</div>
+        <div class="switch-wrap" data-aos="fade"  data-aos-once="true">
+            <div class="switch switch-active" id="dev">Code</div>
             <div class="switch" id="visual">Visuals + Films</div>
         </div>
-        <section id="projects">
-        <section class="projects project1" style="padding-top: 2vw;">
-            <h1>Confab: App for better socializing</h1>
-            <p>Shravan is the concept of a user interface for a smartphone which does not require sight, and instead functions on sound and haptic feedback. I built an early prototype of Shravan, and designed a website to promote it.</p>
+        <section id="projects" data-aos="fade-up">
+        <section class="projects project1" style="padding-top: 2vw;" >
+            <h1>Ojingeo: Squid game Management Application</h1>
+            <p>Ojingeo is a squid game management application. It features 2 portals, one for the frontman to manage players and works and another for the VIPs to bet on the players. It also features a completely functional bitcoin payment mechanism through which the VIPs can make transactions.
+                </p>
             <div class="image">
-                <img src="/images/placeholder.png" alt="">
+                <img src="/images/oj.png" alt="">
                 <div class="about">
-                    App Development, Flutter, Firebase
+                    Node.js, ExpressJS, Web Dev
                 </div>
             </div>
             <div class="work-links">
-                <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-                <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
-            </div>
-    
-        </section>
-        <section class="projects">
-            <h1>Confab: App for better socializing</h1>
-            <p>Shravan is the concept of a user interface for a smartphone which does not require<br>sight, and instead functions on sound and haptic feedback. I built an early prototype<br>of Shravan, and designed a website to promote it.</p>
-            <div class="image">
-                <img src="/images/placeholder.png" alt="">
-                <div class="about">
-                    App Development, Flutter, Firebase
-                </div>
-            </div>
-            <div class="work-links">
-                <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-                <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
-            </div>
+                <a href="https://ojingeo.ndureja.com" target="_blank" class="link"> <i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+            <a href="https://github.com/namandureja/ojingeo" target="_blank" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+        </div>
     
         </section>
         <section class="projects" >
             <h1>Confab: App for better socializing</h1>
-            <p>Shravan is the concept of a user interface for a smartphone which does not require<br>sight, and instead functions on sound and haptic feedback. I built an early prototype<br>of Shravan, and designed a website to promote it.</p>
+            <p>
+                Confab is an application which essentially generates questions to begin a conversation. The main aim is to cater to the people who face difficulties in socializing. It can also be used as a fun game in parties. Currently under development and would be soon launched globally.
+            </p>
             <div class="image">
-                <img src="/images/placeholder.png" alt="">
+                <img src="/images/conf.png" alt="">
                 <div class="about">
                     App Development, Flutter, Firebase
                 </div>
             </div>
             <div class="work-links">
-                <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-                <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+                <a href="https://confab.ndureja.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+                <a href="https://github.com/namandureja/confab" target="_blank" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
             </div>
+    
+        </section>
+        <section class="projects">
+            <h1>LorenePay: A complete payments solution</h1>
+            <p>Lorene Pay is a payment gateway solutions application which provides businesses, small owners and entrepreneurs a convenient and fast way to manage their business. It provides various services like Payment Link generation, integrated gateway set-up, online store set-up, etc. to ease the payment flow structure.</p>
+            <div class="image">
+                <img src="/images/lorenePay.png" alt="">
+                <div class="about">
+                    Web Dev, Node.js
+                </div>
+            </div>
+            <div class="work-links">
+                <a href="https://lorenepay.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+            </div>
+        </section>
+        <section class="projects" >
+            <h1>Sehat: Covid 19 Updates and Statistics</h1>
+            <p>
+                Developed in March 2020, Sehat showcases global and country-specific updates and news articles related to COVID-19 in a clean and easy to understand user interface. Data sources: Johns Hopkins University and The Guardian News API
+            </p>
+                <div class="image">
+                <img src="/images/sehat.png" alt="">
+                <div class="about">
+                    App Dev, Java, Android
+                </div>
+            </div>
+            <div class="work-links">
+                <a href="https://sehat.ndureja.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+                <a href="https://github.com/namandureja/SehatAndroidApplication" target="_blank" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+                <a href="https://www.behance.net/gallery/97486197/Sehat-Covid-19-Tracker-App" target="_blank" class="link"><i class="bi bi-behance"></i>&nbsp;&nbsp;Behance</a>
+                </div>
+            </section>
+            <section class="projects" >
+                <h1>LoreneMart: Fresh products, delivered fast.</h1>
+                <p>
+                    LoreneMart is complet functional e-commerce website. It houses all essential functionalities like a cart system, integrated payment gateways and an order tracking system as well. Everything is built without the use of e-commerce plugins.
+                     </p>
+                    <div class="image">
+                    <img src="/images/lorene.png" alt="">
+                    <div class="about">
+                       Web App, E-commerce, Node.js
+                    </div>
+                </div>
+                <div class="work-links">
+                    <a href="https://lorenesolutions.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+    
+              </div>
+            </section>
+        <section class="projects">
+            <h1>Carbon</h1>
+            <p>
+                Carbon is an app which gives correlation between life expectancy and the air quality index. In a hard hitting way, it brings out how important it is to take care of your self and the surrounding environments and thus create awareness among people.
+            </p>
+                <div class="image">
+                <img src="/images/carbon.png" alt="">
+                <div class="about">
+                    App Dev, Java, Android
+                </div>
+            </div>
+            <div class="work-links">
+                <a href="https://carbon.ndureja.com" target="_blank" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
+                    <a href="https://github.com/namandureja/carbon" target="_blank" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+                    <a href="https://www.behance.net/gallery/94653779/Carbon-Pollution-App-UIUX" target="_blank" class="link"><i class="bi bi-behance"></i>&nbsp;&nbsp;Behance</a>
+            </div>
+        </section>
+        <section class="projects" > 
+            <h1>Rozgar: Marketplace With A Soul</h1>
+            <p>
+                Rozgar provides a threeway solution to simplify e-commerce and to make it accessible to everyone with the Rozgar Seller, Consumer, and delivery apps. These three
+                applications work in harmony to create opportunities for merchants and local businesses to take their venture online.
+            </p>
+                <div class="image">
+                <img src="/images/rozgar.png" alt="">
+                <div class="about">
+                    App Dev, Java, Android
+                </div>
+            </div>
+            <div class="work-links">
+                    <a href="https://github.com/namandureja/rozgar" target="_blank" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+                    <a href="https://www.behance.net/gallery/108307755/Rozgar-Marketplace-With-A-Soul" target="_blank" class="link"><i class="bi bi-behance"></i>&nbsp;&nbsp;Behance</a>
+            </div>
+        </section>
+     
+        <section class="projects" >
+            <h1>Spectrum</h1>
+            <p>
+                Spectrum is an accessibility application which helps people in Communication and interaction with their suurroundings. It offers features like making texts more readable for people with dyslexia and simulating the colors for color blind people.
+                 </p>
+                <div class="image">
+                <img src="/images/spectrum.png" alt="">
+                <div class="about">
+                   Mobile App, Kotlin, Android
+                </div>
+            </div>
+
         </section>
         </section>
         <section id="films">
-            <section class="projects project1"  style="padding-top: 2vw;">
-                <h1>Brooo</h1>
-                <p>Shravan is the concept of a user interface for a smartphone which does not require<br>sight, and instead functions on sound and haptic feedback. I built an early prototype<br>of Shravan, and designed a website to promote it.</p>
-                <div class="image">
-                    <img src="/images/placeholder.png" alt="">
-                    <div class="about">
-                        App Development, Flutter, Firebase
-                    </div>
-                </div>
+            <section class="projects project1" style="padding-top: 2vw;" >
+                <h1>Vehophobia | Short Film</h1>
+                <p>
+                    A young man struggles with Vehophobia, the fear of driving, after facing a major car accident.
+                </p>
+                        <iframe src="https://www.youtube.com/embed/YmSEkL2lcoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                
                 <div class="work-links">
-                    <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-                    <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
-                </div>
-        
-            </section>
-            <section class="projects">
-                <h1>Confab: App for better socializing</h1>
-                <p>Shravan is the concept of a user interface for a smartphone which does not require<br>sight, and instead functions on sound and haptic feedback. I built an early prototype<br>of Shravan, and designed a website to promote it.</p>
-                <div class="image">
-                    <img src="/images/placeholder.png" alt="">
-                    <div class="about">
-                        App Development, Flutter, Firebase
-                    </div>
-                </div>
-                <div class="work-links">
-                    <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-                    <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
-                </div>
-        
-            </section>
-            <section class="projects" >
-                <h1>Confab: App for better socializing</h1>
-                <p>Shravan is the concept of a user interface for a smartphone which does not require<br>sight, and instead functions on sound and haptic feedback. I built an early prototype<br>of Shravan, and designed a website to promote it.</p>
-                <div class="image">
-                    <img src="/images/placeholder.png" alt="">
-                    <div class="about">
-                        App Development, Flutter, Firebase
-                    </div>
-                </div>
-                <div class="work-links">
-                    <a href="" class="link"><i class="bi bi-link"></i>&nbsp;&nbsp;Website</a>
-                    <a href="" class="link"><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
+                    <a href="https://youtu.be/YmSEkL2lcoQ" target="_blank" class="link"><i class="bi bi-youtube"></i>&nbsp;&nbsp;Youtube</a>
+
                 </div>
             </section>
+            <section class="projects project1" style="padding-top: 2vw;" >
+                <h1>Burden | Short Film</h1>
+                <p>
+                   A student fails to cope up with the academic pressure along with the yearning to pursue his hobbies.
+                </p>
+                        <iframe src="https://www.youtube.com/embed/kLht-laqa4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                
+                <div class="work-links">
+                    <a href="https://youtu.be/kLht-laqa4E" target="_blank" class="link"><i class="bi bi-youtube"></i>&nbsp;&nbsp;Youtube</a>
+
+                </div>
+            </section>
+            <section class="projects project1" style="padding-top: 2vw;" >
+                <h1>Code Wars 2019 | Official Video</h1>
+                <p>
+                  Created for Code Wars, an annual inter-school tech symposium. The 3D models were built on Blender and later composed using Adobe After Effects.
+                </p>
+                        <iframe src="https://www.youtube.com/embed/VpaRQJQ9yFY?start=238" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                
+                <div class="work-links">
+                    <a href="https://youtu.be/VpaRQJQ9yFY" target="_blank" class="link"><i class="bi bi-youtube"></i>&nbsp;&nbsp;Youtube</a>
+
+                </div>
+            </section>
+            <section class="projects project1" style="padding-top: 2vw;" >
+                <h1>Sunaayy Foundation</h1>
+                <p>
+                    Sunaayy Foundation is a non-profit organization providing education and care to underprivileged children on the sidewalks of Delhi. 
+                                </p>
+                        <iframe src="https://www.youtube.com/embed/Zpc1j8Mhzfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                
+                <div class="work-links">
+                    <a href="https://youtu.be/Zpc1j8Mhzfg" target="_blank" class="link"><i class="bi bi-youtube"></i>&nbsp;&nbsp;Youtube</a>
+
+                </div>
+            </section>
+            <section class="projects project1" style="padding-top: 2vw;" >
+                <h1>Belle Gens | Promo Video</h1>
+                <p>
+                    Created for a design event.     
+                </p>
+                        <iframe src="https://www.youtube.com/embed/OyEBpjz6aX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                <div class="work-links">
+                    <a href="https://youtu.be/OyEBpjz6aX0" target="_blank" class="link"><i class="bi bi-youtube"></i>&nbsp;&nbsp;Youtube</a>
+
+                </div>
+            </section>
+           
             </section>
     
     </main>
   
     <footer>
-        <i class="bi bi-envelope-fill"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-behance"></i>
-        <i class="bi bi-github"></i>
-        <i class="bi bi-instagram"></i>
-    </footer>
+        <a href="mailto: hello@ndureja.com"><i class="bi bi-envelope-fill"></i></a> 
+         <a href="https://twitter.com/dureja_naman" target="_blank"><i class="bi bi-twitter"></i></a>
+         <a href="https://www.linkedin.com/in/ndureja/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.behance.net/namandureja" target="_blank"> <i class="bi bi-behance"></i></a>
+         <a href="https://github.com/namandureja" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/namandurejaa/" target="_blank"> <i class="bi bi-instagram"></i></a>
+     </footer>
     <div class="made">
         Made with <3 by Naman Dureja.
     </div>
     <script>
         $('#films').hide();
         $(function () {
+            AOS.init();
+
   $(document).scroll(function () {
     var $nav = $(".nav-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
@@ -172,12 +289,11 @@
       var parallaxInstance = new Parallax(scene);
       parallaxInstance.invert(false, false);
     document.getElementById("visual").addEventListener('click',(e)=>{
-        if(!e.target.classList.contains('switch-active')){
+        if(! document.getElementById("visual").classList.contains('switch-active')){
+            document.getElementById("visual").classList.add("switch-active");
             document.getElementById("dev").classList.remove('switch-active');
-            e.target.classList.add("switch-active");
             $('#films').show();
             $('#projects').hide();
-
         }
     })
     document.getElementById("dev").addEventListener('click',(e)=>{
