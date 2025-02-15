@@ -15,6 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 I'm Naman Dureja, a full stack developer and a computer science student at NSUT Delhi.<br/>
-I'm currently working as a software developer for [Knoblr](https://knoblr.com/)<br/>
+I'm currently working as a software engineering intern for Tower Research Capital.<br/>
 Reach me at [linkedIn](https://www.linkedin.com/in/ndureja/)<br/>
 You can see my projects [here](https://ndureja.com)
